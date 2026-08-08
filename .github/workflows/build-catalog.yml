@@ -1,0 +1,35 @@
+name: Build shared catalog
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - catalog.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  checks: read
+  pull-requests: write
+  statuses: write
+
+jobs:
+  catalog:
+    name: build-shared-catalog
+    runs-on: ubuntu-latest
+    concurrency:
+      group: star-owner-catalog-maples921-star-owner-shared-knowledge-0808
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/validate-shared-docs.mjs
+      - run: node scripts/build-catalog.mjs
+      - name: Commit catalog with protected-branch handoff
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/publish-shared-catalog.mjs
