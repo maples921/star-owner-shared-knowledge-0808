@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "type": "star-owner-shared-knowledge",
+  "repository": "maples921/star-owner-shared-knowledge-0808",
+  "defaultBranch": "main",
+  "capabilities": [
+    "bilibili-summary",
+    "single-video-summary",
+    "multipart-summary",
+    "catalog-v1"
+  ]
+}
