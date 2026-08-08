@@ -1,6 +1,31 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "",
-  "total": 0,
-  "documents": []
+  "generatedAt": "2026-08-08T11:58:22.644Z",
+  "total": 1,
+  "documents": [
+    {
+      "documentId": "doc-b077e7b3b89dc56c68d90a73",
+      "documentType": "single-video",
+      "sourceType": "bilibili-video-summary",
+      "bvid": "BV11mNA6vEJX",
+      "title": "【🤯天下苦对话框久矣！】打破线性聊天，让复杂知识层层展开【B站AI创造公开赛】",
+      "owner": "Explore_Official",
+      "collectionName": "AIcode",
+      "userName": "枫林_Maples",
+      "bilibiliUid": "84354285",
+      "remoteCollectionId": "bilibili:3915148685",
+      "sourceCollectionKind": "bilibili",
+      "contributorGithubId": "103600402",
+      "contributorGithubLogin": "maples921",
+      "entryMarkdown": "summary.md",
+      "totalBytes": 567228,
+      "fileCount": 14,
+      "contentSha256": "18883b2a5f0f8dc9f0d2516288e0ca89749cff1f20d26526432de7851f001a1f",
+      "completedAt": "2026-08-07T12:56:46.132Z",
+      "uploadedAt": "2026-08-08T11:58:22.644Z",
+      "updatedAt": "2026-08-08T11:58:22.644Z",
+      "metadataPath": "103600402/bilibili/col-a0e560b4a14c564b5d1fee8e/doc-b077e7b3b89dc56c68d90a73/_star-owner-document.json",
+      "documentRoot": "103600402/bilibili/col-a0e560b4a14c564b5d1fee8e/doc-b077e7b3b89dc56c68d90a73/"
+    }
+  ]
 }
